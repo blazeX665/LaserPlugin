@@ -1,0 +1,16 @@
+name: LaserPlugin
+version: '${project.version}'
+main: ru.laser.LaserPlugin
+api-version: '1.21'
+description: Лазерная пушка для Minecraft 1.21.11
+commands:
+  laser:
+    description: Выдать лазерную пушку
+    usage: /laser [give|reload] [игрок]
+permissions:
+  laser.give:
+    description: Получить лазер
+    default: op
+  laser.use:
+    description: Пользоваться лазером
+    default: true
